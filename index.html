@@ -14,10 +14,10 @@
   <nav class="navbar">
     <div class="container">
       <div class="logo">
-        <a href="#">EngineersHub</a>
+        <a href="#"><span>EngineersHub</span></a> 
       </div>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
+        <li><i class="fa-solid fa-house"></i><a href="#home">&nbsp;Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#jobs">Jobs</a></li>
         <li><a href="#services">Services</a></li>
@@ -32,7 +32,7 @@
   <!--Home Section -->
   <section class="home" id="home">
     <div class="home-content">
-      <h1 class="h1">Welcome to EngineersHub</h1>
+      <h1 class="h1">Welcome to <span>EngineersHub</span> </h1>
       <p>Your one-step solution for engineering jobs and talent acquisition in Nepal.</p>
     </div>
   </section>
@@ -71,8 +71,11 @@
 
   <!-- About Section -->
   <section class="about" id="about">
-    <div class="about-content">
-      <h2>About EngineersHub</h2>
+    <div class="about-content1">
+
+    </div>
+    <div class="about-content2 about-content">
+      <h2>About <span>EngineersHub</span></h2>
       <p>
         EngineersHub is a professional platform built to connect engineers with top job opportunities and companies across Nepal. We empower engineers by providing tools, resources, and verified listings.
       </p>
@@ -108,7 +111,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
+  <!-- <section class="contact" id="contact">
     <h2>Contact Us</h2>
     <form action="#" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
@@ -116,11 +119,35 @@
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-  </section>
+  </section> -->
+    <!-- ...existing code... -->
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or need support? Reach out and our team will get back to you soon.</p>
+      <form action="#" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <select name="inquiry" required>
+          <option value="">Select Inquiry Type</option>
+          <option value="jobseeker">Job Seeker</option>
+          <option value="employer">Employer</option>
+          <option value="partnership">Partnership</option>
+          <option value="support">Support</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  <!-- ...existing code... -->
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 EngineersHub, Made in Nepal.</p>
+    <div class="div1 f-div"></div>
+    <div class="div2 f-div"></div>
+    <div class="div3 f-div"></div>
   </footer>
   <script src="script.js"></script>
 </body>

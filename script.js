@@ -15,3 +15,23 @@ let interval = setInterval(() => {
         clearInterval(interval);
     }
 }, 150);
+
+document.querySelector('.contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    inquiry: form.inquiry.value,
+    subject: form.subject.value,
+    message: form.message.value
+  };
+  const res = await fetch('http://localhost:5000/api/contact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+  const result = await res.json();
+  alert(result.message);
+  if(result.message === 'Message sent successfully') form.reset();
+});
